@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <link rel="stylesheet" href="../../styles/nav.css">
+    <title>Del Campo a tu Casa</title>
+</head>
+<body>
+
+    <!-- Menu -->
+     
+    <div id="menuver">
+        <nav id="navbar" width="100%" height="500%">
+            <ul class="menu-horizontal">
+                 
+                <li>
+                    <a href="../../index_sesion.html">Inicio</a>
+                </li>
+                <li>
+                   <a href="">Usuario</a>
+                   <ul class="menu-vertical">
+                       <li><a href="../../cerrar_Sesion.html">cerrar Sesion</a></li>
+                       <li><a href="../../cambiar_contraseña.html">cambio password</a></li>
+                   </ul>
+                </li>
+                <li>
+                   <a href="" id="deshabilitado">Carnes</a>
+                   <ul class="menu-vertical">
+                       <li>
+                           <a href="../carnes_sesion/res_sesion.html" target="contenido">Res</a>
+                       </li>
+                       <li>
+                           <a href="../carnes_sesion/cerdo_sesion.html" target="contenido">Cerdo</a>
+                       </li>
+                       <li>
+                           <a href="../carnes_sesion/pollo_sesion.html" target="contenido">Pollo</a>
+                       </li>
+                       <li>
+                           <a href="../carnes_sesion/pescado_sesio.html" target="contenido">Pescado</a>
+                       </li>
+                       <li>
+                           <a href="../carnes_sesion/embutidos_sesion.html" id="deshabilitado">Embutidos</a>   
+                       </li>
+                   </ul>
+               </li>
+
+                <li>
+                    <a href="" target="contenido" id="deshabilitado">Cosechas</a>
+                    <ul class="menu-vertical">
+                        <li>
+                            <a href="../cosechas_sesion/frutas_sesion.html" target="contenido">Frutas</a>
+                        </li>
+                        <li>
+                            <a href="../cosechas_sesion/verduras_sesion.html" target="contenido">Verduras</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="" id="deshabilitado">Granjas</a>
+                    <ul class="menu-vertical">
+                       <li>
+                           <a href="../lacteos_sesion/huevos_sesion.html" target="contenido">Huevos</a>
+                       </li>
+                       <li>
+                           <a href="../lacteos_sesion/lacteos_sesion.html" target="contenido">Lacteos</a>
+                       </li>
+                    </ul>
+                </li>
+                <!-- carrito -->
+
+                <div class="contain-icon">
+
+                    <div id="contain-cart-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-car">
+                        
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                          </svg>
+        
+                          <!--div-- id="cont-product">
+                            <spam z>0</spam>
+                          </!--div-->
+                    </div>
+                    
+    
+                      <div class="cont-car-product hidden-car">
+    
+                        <div class="row-product">
+                            <div class="cart-product">
+    
+                                <div id="info-car-product">
+        
+                                    <spam id="cantidad-car">0</spam>    
+                                    <span id="precio-product-car">$0</span>
+     
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-close">
+            
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                      </svg>
+                                </div>
+                        </div>
+                        </div>
+                        <div id="car-total" class="car-total hidden">
+                            <h3>Total:</h3>
+                            <span class="total-pagar">$0</span>
+                        </div><a href="../../factura.html">
+                        <button id="btn-pagar" onclick="click">Pagar</button></a>
+                        <p class="cart-empty"></p>
+                      </div>
+                </div>
+        </div>
+           </ul>
+         </nav>
+        </div>
+    <header>
+   
+
+       
+    </header>
+
+<!-- Productos -->
+
+    <div>
+        <h1>Verduras</h1>
+    </div>
+
+    <div id="container-item">
+        <div id="item">
+            <figure>
+                <img src="../cosechas/img/verduras/tomates.jpg" alt="producto">
+            </figure>
+            <div id="info-product">
+                <h1>Tomates</h1>
+                <p id="precio">$3.000</p>
+                <button class="btn-add-cart">Añadir</button>
+            </div>
+        </div>
+    
+        <div id="item">
+            <figure>
+                <img src="../cosechas/img/verduras/zanahorias.jpg" alt="producto">
+            </figure>
+            <div id="info-product">
+                <h1>Zanahorias</h1>
+                <p id="precio">$2.500</p>
+                <button class="btn-add-cart">Añadir</button>
+            </div>
+        </div>
+
+        <div id="item">
+            <figure>
+                <img src="../cosechas/img/verduras/papas.jpg" alt="producto">
+            </figure>
+            <div id="info-product">
+                <h1>Papas</h1>
+                <p id="precio">$4.000</p>
+                <button class="btn-add-cart">Añadir</button>
+            </div>
+        </div>
+
+        <div id="item">
+            <figure>
+                <img src="../cosechas/img/verduras/cebollas.jpg" alt="producto">
+            </figure>
+            <div id="info-product">
+                <h1>Cebollas</h1>
+                <p id="precio">$2.000</p>
+                <button class="btn-add-cart">Añadir</button>
+            </div>
+        </div>
+
+        <div id="item">
+            <figure>
+                <img src="../cosechas/img/verduras/lechuga.jpg" alt="producto">
+            </figure>
+            <div id="info-product">
+                <h1>Lechuga</h1>
+                <p id="precio">$1.500</p>
+                <button class="btn-add-cart">Añadir</button>
+            </div>
+        </div>
+    </div>
+
+<script src="../../js/js.js"></script>
+
+</body>
+</html>
