@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/nav.css">
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Menu -->
+
+    <div id="menuver">
+        <nav id="navbar" width="100%" height="500%">
+            <ul class="menu-horizontal">
+                 
+                 <li>
+                     <a href="../../index.html">Inicio</a>
+                 </li>
+                  
+                 <li>
+                    <a href="" id="deshabilitado">Carnes</a>
+                    <ul class="menu-vertical">
+                        <li>
+                            <a href="res.html" target="contenido">Res</a>
+                        </li>
+                        <li>
+                            <a href="cerdo.html" target="contenido">Cerdo</a>
+                        </li>
+                        <li>
+                            <a href="pollo.html" target="contenido">Pollo</a>
+                        </li>
+                        <li>
+                            <a href="pescado.html" target="contenido">Pescado</a>
+                        </li>
+
+                        <li>
+                            <a href="embutidos.html" id="deshabilitado">Embutidos</a>   
+                        </li>
+                    </ul>
+                </li>
+
+                 <li>
+                     <a href="../cosechas/" target="contenido" id="deshabilitado">Cosechas</a>
+                     <ul class="menu-vertical">
+                         <li>
+                             <a href="../cosechas/frutas.html" target="contenido">Frutas</a>
+                         </li>
+                         <li>
+                             <a href="../cosechas/verduras.html" target="contenido">Verduras</a>
+                         </li>
+                     </ul>
+                 </li>
+ 
+                 <li>
+                     <a href="" id="deshabilitado">Granjas</a>
+                     <ul class="menu-vertical">
+                         <li>
+                             <a href="../granjas/huevos.html" target="contenido">Huevos</a>
+                         </li>
+                         <li>
+                             <a href="../granjas/lacteos.html" target="contenido">Lacteos</a>
+                         </li>
+                     </ul>
+                 </li>
+            </ul>
+
+            <!-- Carrito -->
+
+            <div class="contain-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-car">
+                    
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                  </svg>
+    
+                  <div id="cont-product">
+                    <spam z>0</spam>
+                  </div>
+                  
+                  <div class="cont-car-product hidden-car">
+    
+                    <div id="car-product">
+    
+                        <div id="info-car-product">
+     
+                            <spam id="cantidad-car">1</spam>
+    
+                            <p id="titulo-car">Carne</p>
+    
+                            <span id="precio-product-car">$10.000</span>
+    
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-close">
+    
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg>
+                        </div>
+                    </div>
+                    <div id="car-total">
+                        <h3>Total</h3>
+                        <span #total-pagar>$10.000</span>
+                    </div>
+                  </div>
+            </div>
+         </nav>
+        </div>
+        
+        <header>
+            <h1>Productos</h1>
+        </header>
+
+<!-- Productos -->
+
+    <div>
+        <h1>Carnes</h1>
+    </div>
+
+    <div id="container-item">
+            <div id="item">
+                <figure>
+                    <img src="../carnes/img/pescado/blanquillo.jpeg" alt="producto">
+                </figure>
+                <div id="info-product">
+                    <h1>Blanquillo</h1>
+                    <p id="precio">$10.000</p>
+                    <button>Añadir</button>
+                </div>
+            </div>
+    
+        <div id="item">
+            <figure>
+                <img src="../carnes/img/pescado/bocachico.jpeg" alt="producto">
+            </figure>
+            <div id="info-product">
+                <h1>Bocachico</h1>
+                <p id="precio">$10.000</p>
+                <button>Añadir</button>
+            </div>
+        </div>
+
+    <div id="item">
+        <figure>
+            <img src="../carnes/img/pescado/cachama.jpeg" alt="producto">
+        </figure>
+        <div id="info-product">
+            <h1>Cachama</h1>
+            <p id="precio">$10.000</p>
+            <button>Añadir</button>
+        </div>
+    </div>
+
+    <div id="item">
+        <figure>
+            <img src="../carnes/img/pescado/filetefrescodemojarra.jpeg" alt="producto">
+        </figure>
+        <div id="info-product">
+            <h1>Filete de Mojarra Fresco</h1>
+            <p id="precio">$10.000</p>
+            <button>Añadir</button>
+        </div>
+    </div>
+
+    <div id="item">
+        <figure>
+            <img src="../carnes/img/pescado/mojarranegra.jpeg" alt="producto">
+        </figure>
+        <div id="info-product">
+            <h1>Mojarra Negra</h1>
+            <p id="precio">$10.000</p>
+            <button>Añadir</button>
+        </div>
+    </div>
+            <div id="item">
+                <figure>
+                    <img src="../carnes/img/pescado/mojarraroja.jpeg" alt="producto">
+                </figure>
+                <div id="info-product">
+                    <h1>Mojarra Roja</h1>
+                    <p id="precio">$10.000</p>
+                    <button>Añadir</button>
+                </div>
+            </div>
+    
+        <div id="item">
+            <figure>
+                <img src="../carnes/img/pescado/recortedetrucha.jpeg" alt="producto">
+            </figure>
+            <div id="info-product">
+                <h1>Recorte de Trucha</h1>
+                <p id="precio">$10.000</p>
+                <button>Añadir</button>
+            </div>
+        </div>
+
+    <div id="item">
+        <figure>
+            <img src="../carnes/img/pescado/truchafresca.jpeg" alt="producto">
+        </figure>
+        <div id="info-product">
+            <h1>Trucha Fresca</h1>
+            <p id="precio">$10.000</p>
+            <button>Añadir</button>
+        </div>
+    </div>
+
+    <div id="item">
+        <figure>
+            <img src="../carnes/img/pescado/truchamariposafresca.jpeg" alt="producto">
+        </figure>
+        <div id="info-product">
+            <h1>Trucha Mariposa Fresca</h1>
+            <p id="precio">$10.000</p>
+            <button>Añadir</button>
+        </div>
+    </div>
+
+    <div id="item">
+        <figure>
+            <img src="../carnes/img/pescado/robalo.jpeg" alt="producto">
+        </figure>
+        <div id="info-product">
+            <h1>Robalo</h1>
+            <p id="precio">$10.000</p>
+            <button>Añadir</button>
+        </div>
+    </div>
+
+    <div id="item">
+        <figure>
+            <img src="../carnes/img/pescado/salmonchileno.jpeg" alt="producto">
+        </figure>
+        <div id="info-product">
+            <h1>Salmon Chileno</h1>
+            <p id="precio">$10.000</p>
+            <button>Añadir</button>
+        </div>
+    </div>
+
+    <div id="item">
+        <figure>
+            <img src="../carnes/img/pescado/yamu.jpeg" alt="producto">
+        </figure>
+        <div id="info-product">
+            <h1>Yamu</h1>
+            <p id="precio">$10.000</p>
+            <button>Añadir</button>
+        </div>
+    </div>
+</div>
+
+<script src="../../js.js"></script>
+</body>
+</html>
