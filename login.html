@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        .login-container h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .login-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #5ab5f9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .login-container input[type="submit"]:hover {
+            background-color: #3399ff;
+        }
+
+        .login-container .register-link {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .login-container .register-link a {
+            color: #3399ff;
+            text-decoration: none;
+        }
+
+        .login-container .register-link a:hover {
+            text-decoration: underline;
+        }
+
+        .login-container .social-login {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .login-container .social-login img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .login-container .divider {
+            margin: 20px 0;
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        .login-container .password-reset {
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .login-container .password-reset a {
+            color: #3399ff;
+            text-decoration: none;
+        }
+
+        .login-container .password-reset a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            font-size: 12px;
+            color: #888;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="validar_login.php" method="POST">
+            <input type="text" placeholder="E-Mail" name="email" required>
+            <input type="password" placeholder="Contraseña" name="password" required>
+            <input type="submit" value="Iniciar Sesión">
+        </form>
+        <div class="register-link">
+            ¿No tienes una cuenta? <a href="register.html">Regístrate aquí</a>
+        </div>
+        <div class="divider">— O inicia sesión con —</div>
+        <div class="social-login">
+            <button id="btn-login-with"><i class="fa-brands fa-google"></i>Google</button>
+            <button id="btn-login-with"><i class="fa-brands fa-apple"></i>Apple ID</button>
+            <button id="btn-login-with"><i class="fa-brands fa-facebook"></i>Facebook</button>
+        </div>
+        <div class="footer">
+            ¿No tienes cuenta? <a href="#">Regístrate ahora</a><br>
+            Copyright © 2024 | <a href="#">Política de Privacidad</a>
+        </div>
+    </div>
+</body>
+</html>

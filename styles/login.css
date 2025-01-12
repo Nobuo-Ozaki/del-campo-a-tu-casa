@@ -1,0 +1,158 @@
+:root{
+    --color-yellow: #7ec1ff;
+    --color-background: #d2cecb;
+    --color-hover: #f0f0f0;
+    --color-fondo: #686868;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--color-background);
+}
+
+#container-login{
+    background-color: #fff;
+    padding: 45px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 550px;
+}
+
+#container-login h1{
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 900;
+}
+
+#container-login h2{
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+input{
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: none;
+    font-family: inherit;
+    border: 2px solid #eee;
+    font-size: 15px;
+    color: #000;
+}
+
+input:focus:invalid{
+    border: 2px solid red;
+}
+
+input::-webkit-input-placeholder{
+    color: rgb(112, 112, 112);
+    font-weight: 500;
+}
+
+input:not(:last-child){
+    margin-bottom: 15px;
+}
+
+#input-pass{
+    position: relative;
+}
+
+#btn-hide-show{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border: none;
+    background: none;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+#show-pass{
+    display: none;
+
+}
+
+#paragraph1{
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#btn-sing-in{
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    background-color: var(--color-yellow);
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+#paragraph2{
+    font-weight: 500;
+    font-size: 14px;
+    margin: 25px 0;
+    text-align: center;
+}
+
+#contain-btn-login-with{
+    display: flex;
+    gap: 10px;
+}
+
+#btn-login-with{
+    flex: 1;
+    border: 1px solid #eee;
+    background: none;
+    padding: 15px;
+    font-weight: 900;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-login-with:hover{
+    background-color: var(--color-hover);
+}
+
+#btn-login-with i{
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+#create-account{
+    text-align: center;
+    margin-top: 25px;
+    font-weight: 500;
+}
+
+#create-account a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+}
+
+#footer{
+    text-align: center;
+    font-weight: 600;
+}

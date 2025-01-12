@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Pedido</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        header {
+            background-color: #7ec1ff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #7ec1ff;
+            color: white;
+        }
+        .total {
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Confirmación de Pedido</h1>
+    </header>
+    <div class="container">
+        <h2>Gracias por su compra</h2>
+        <p>Su pedido ha sido confirmado y será enviado pronto.</p>
+        <h3>Detalles del Pedido</h3>
+        <table id="order-table">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="order-content"></tbody>
+        </table>
+        <div class="total">
+            Subtotal: <span id="order-subtotal">$0</span>
+        </div>
+        <div>
+            <p>Tiempo estimado de entrega: <strong>3-5 días hábiles</strong></p>
+        </div>
+    </div>
+
+    <script>
+        function formatCurrency(amount) {
+            return new Intl.NumberFormat('es-CO', {
+                style: 'currency',
+                currency: 'COP',
+                minimumFractionDigits: 2
+            }).format(amount);
+        }
+
+        function calculateSubtotal(order) {
+            return order.reduce((total, item) => total + item.price * item.quantity, 0);
+        }
+
+        function displayOrder() {
+    const orderContent = document.getElementById('order-content');
+    const subtotalElement = document.getElementById('order-subtotal');
+
+    const order = JSON.parse(localStorage.getItem('order')) || [];
+    orderContent.innerHTML = '';
+
+    console.log(order); // Verifica el contenido de 'order'
+
+    order.forEach(item => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td>${item.title}</td>
+            <td>${formatCurrency(item.precio)}</td> // Muestra el precio unitario
+            <td>${item.quantity}</td>
+            <td>${formatCurrency(item.precio * item.quantity)}</td> // Total por la cantidad
+        `;
+        orderContent.appendChild(row);
+    });
+
+    const subtotal = calculateSubtotal(order);
+    subtotalElement.textContent = formatCurrency(subtotal);
+}
+
+
+        document.addEventListener('DOMContentLoaded', displayOrder);
+//--------------------------------- nombre y cantidad -----------------------------------------
+        function displayOrder() {
+    const orderContent = document.getElementById('order-content');
+    const subtotalElement = document.getElementById('order-subtotal');
+
+    const order = JSON.parse(localStorage.getItem('order')) || [];
+    orderContent.innerHTML = '';
+
+    order.forEach(item => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td>${item.title}</td>
+            <td>${formatCurrency(item.precio)}</td>
+            <td>${item.quantity}</td>
+            <td>${formatCurrency(item.precio * item.quantity)}</td>
+        `;
+        orderContent.appendChild(row);
+    });
+
+    const subtotal = calculateSubtotal(order);
+    subtotalElement.textContent = formatCurrency(subtotal);
+}
+//--------------------------
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Contraseña</title>
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            background-color: #e0f7fa;
+            padding: 50px;
+        }
+        form {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            max-width: 450px;
+            margin: auto;
+            border-left: 8px solid #00796b;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            width: 100%;
+            padding: 12px;
+            margin: 15px 0;
+            border: 1px solid #00796b;
+            border-radius: 8px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+        input[type="text"]:focus,
+        input[type="password"]:focus,
+        input[type="email"]:focus {
+            border-color: #004d40;
+            outline: none;
+        }
+        input[type="submit"] {
+            background: #00796b;
+            color: white;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 16px;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #004d40;
+        }
+        h1 {
+            text-align: center;
+            color: #00796b;
+            font-weight: normal;
+        }
+        label {
+            color: #004d40;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cambiar Contraseña</h1>
+    <form action="cambiar_contraseña.php" method="POST">
+        <label for="cedula">Cédula:</label>
+        <input type="text" name="cedula" required>
+
+        <label for="password">Contraseña Actual:</label>
+        <input type="password" name="password" required>
+
+        <label for="nueva_password">Nueva Contraseña:</label>
+        <input type="password" name="nueva_password" required>
+
+        <label for="confirmpassword">Confirmar Nueva Contraseña:</label>
+        <input type="password" name="confirmpassword" required>
+
+        <input type="submit" value="Cambiar Contraseña">
+    </form>
+</body>
+</html>
